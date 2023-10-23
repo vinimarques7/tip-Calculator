@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- function update to test the program - RETURN MESSAGE 'OK' -->
+    <main oninput="update()">
+        <div class="main-container">
+            <h2>Tip Calculator</h2>
+            <div class="first-container">
+                <section class="bill">
+                    <p>Bill</p>
+                    <input type="number" name="your bill" id="yourBill" class="bill-input" placeholder=" Your bill">
+                </section>
+
+                <label for="tipInput" class="select">Select Tip<span id="tipPercent"></span></label>
+                <div><input type="range" value="0" id="tipInput" class="range"></div>
+            
+                <!-- Tip Value area -->
+                <div class="tipvalue">
+                    <span class="select">Tip</span>
+                    <span id="tipValue"></span>
+                </div>
+
+                <div class="total">
+                    <span><strong>Total</strong></span>
+                    <span id="totalWithTip"></span>
+                </div>
+
+            
+            </div>
+            <div class="second-container">
+                <div class="space">
+                    <label for="splitInput" class="select">Split (people)<span id="splitValue"></span></label>
+                </div>            
+            <div><input type="range" min="1" max="10" value="1" id="splitInput" class="range"></div>
+            <div class="bill-each">
+                    <span>Bill each</span>
+                    <span id="billEach"></span>
+            </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
